@@ -34,6 +34,7 @@ import {
 
 const style = {margin: 5};
 
+const font_style={color:"wheat"};
 
 const name = "User";
 class DashB extends React.Component {
@@ -139,27 +140,33 @@ class DashB extends React.Component {
 
             <div id="sidediv" className="left-side-div" >
             <div>
+                <div className="imgdiv">
             <Avatar src="images/user.jpg" color={deepOrange300}
           backgroundColor={purple500}
           size={120}
           style={style}/>
+          <p className="text-left" style={font_style} > System Engineer </p>
+          </div>
           <MobileTearSheet>
           <List>
              <Link to={'/bar'} onTouchTap={this.toggleNavigation} >
-                <ListItem primaryText="Bar Chart" />
+                <ListItem primaryText="Bar Chart" style={font_style} />
               </Link>
             
             <Link to={'/bubble'} onTouchTap={this.toggleNavigation} >
-                <ListItem primaryText="Bubble Chart" />
+                <ListItem primaryText="Bubble Chart" style={font_style} />
               </Link>
 
             <Link to={'/doughnut'} onTouchTap={this.toggleNavigation} >
-                            <ListItem primaryText="Doughnut Chart" />
+                            <ListItem primaryText="Doughnut Chart" style={font_style} />
                         </Link>
                 <Link to={'/pie'} onTouchTap={this.toggleNavigation} >
-                    <ListItem primaryText="Pie Chart" />
+                    <ListItem primaryText="Pie Chart" style={font_style} />
                 </Link>
-                    
+
+                    <Link to={'/map'} onTouchTap={this.toggleNavigation} >
+                    <ListItem primaryText="Map" style={font_style} />
+                </Link>  
       
                </List>
         </MobileTearSheet>
@@ -170,6 +177,11 @@ class DashB extends React.Component {
                 
                    {this.props.children}
             </div>
+
+        <div id="bottom">
+            
+        </div>
+
             </div>
         );
     }

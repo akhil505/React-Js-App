@@ -97,6 +97,7 @@ a:hover {
   text-align: center;
   width: 500px;
   height: 400px;
+  margin-left: 5%;
   
 }
 
@@ -104,6 +105,7 @@ a:hover {
   text-align: center;
   width: 500px;
   height: 400px;
+  margin-left: 5%;
   
 }
 
@@ -126,11 +128,20 @@ a:hover {
     left: 5px;
     z-index: 999;
     height: auto;
-    margin: 0 8px;
+    margin: 0 -3px;
+    background-color: #333333
 }
 
 .page-content{
 
  margin-left: 35%;
 
+}
+.imgdiv{
+   margin-top:-2px;
+   margin-left:50px;
+}
+
+.text-left {
+  text-align: left;
 }

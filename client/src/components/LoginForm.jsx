@@ -7,6 +7,9 @@ import ActionAndroid from 'material-ui/svg-icons/action/android';
 import FlatButton from 'material-ui/FlatButton';
 import FontIcon from 'material-ui/FontIcon';
 import {fullWhite} from 'material-ui/styles/colors';
+import done from 'material-ui/svg-icons/action/done';
+
+
 const style = {
   margin: 12,
 };
@@ -60,12 +63,16 @@ const LoginForm = ({
      <FlatButton
       icon={<ActionAndroid />}
       style={style}
+      icon={ <ActionAndroid color={fullWhite} />}
     />*/}
     {/*<FlatButton
       backgroundColor="#a4c639"
       hoverColor="#8AA62F"
-      icon={<ActionAndroid color={fullWhite} />}
+      
+      icon={ <done color={fullWhite} />}
+      
       style={style}
+      type="submit" 
     />*/}
   </div>
       {/*<CardText>Don't have an account? <Link to={'/signup'}>Create one</Link>.</CardText>*/}

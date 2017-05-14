@@ -15,6 +15,9 @@ import Doughnut from './containers/Doughnut.jsx';
 import Pie from './containers/Pie.jsx';
 import DashB from './components/DashB.jsx';
 import Barchart from './components/Barchart.jsx';
+import Footer from './containers/Footer.jsx';
+import SimpleMap from './components/SimpleMap.jsx';
+
 // remove tap delay, essential for MaterialUI to work properly
 injectTapEventPlugin();
 /*
@@ -34,10 +37,13 @@ ReactDom.render((
       <Route path="/bubble" component={Bubble}/>
       <Route path="/doughnut" component={Doughnut}/>
       <Route path="/bar" component={Barchart}/>
+      <Route path="/map" component={SimpleMap}/>
+      
     </Route>
   </Router>
   </MuiThemeProvider>), document.getElementById('header'));
 
+ReactDom.render(( <Footer/> ) ,document.getElementById('root'));
 
 
 

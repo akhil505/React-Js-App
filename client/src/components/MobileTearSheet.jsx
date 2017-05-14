@@ -20,7 +20,7 @@ class MobileTearSheet extends Component {
         width: '100%',
       },
       container: {
-        border: 'solid 1px #d9d9d9',
+        border: 'solid 0px #d9d9d9',
         height: this.props.height,
         overflow: 'hidden',
       },
